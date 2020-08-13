@@ -1,3 +1,21 @@
+#Step 1
+strinput=input("Please type in the 3 parameters to calculate ")
+arrinput=strinput.split(",")
+
+if arrinput[0]=="x":    
+    print(int(arrinput[1]) * int(arrinput[2]))
+elif arrinput[0]=="+":    
+    print(int(arrinput[1]) + int(arrinput[2]))
+elif arrinput[0]=="-":    
+    print(int(arrinput[1]) - int(arrinput[2]))
+elif arrinput[0]=="/":    
+    print(int(arrinput[1]) / int(arrinput[2]))
+elif arrinput[0]=="%":    
+    print(int(arrinput[1]) % int(arrinput[2]))
+
+exit()
+
+
 #Step 3
 def calgotostring(strinput):
     strinput=strinput.replace("calc ","") 
@@ -75,24 +93,3 @@ print(totalvalue)
 #print(calstring("calc + 16 7"))
 exit()
 
-#Step 1
-strinput=input("Please type in the 3 parameters to calculate ")
-arrinput=strinput.split(",")
-
-if arrinput[0]=="x":    
-    print(int(arrinput[1]) * int(arrinput[2]))
-elif arrinput[0]=="+":    
-    print(int(arrinput[1]) + int(arrinput[2]))
-elif arrinput[0]=="-":    
-    print(int(arrinput[1]) - int(arrinput[2]))
-elif arrinput[0]=="/":    
-    print(int(arrinput[1]) / int(arrinput[2]))
-
-
-
-"""
-It should accept 3 pieces of input from the user: a string that's one of "x", "+", "
-"--", or
-"/" (an operation), an integer (parameter A), and another integer (parameter B).
-If the user supplied "/", "5", "2", the application should output "2.5".
-"""
